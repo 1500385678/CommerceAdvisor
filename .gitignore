@@ -1,0 +1,45 @@
+# ============================================
+# CommerceAdvisor · .gitignore
+# 起:2026-08-25 · P0.2 配套
+# 维护:T1(随 Phase 演进)
+# ============================================
+
+# ---------- macOS 系统污染 ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- 依赖 / 构建产物 ----------
+node_modules/
+dist/
+build/
+.next/
+.cache/
+.parcel-cache/
+
+# ---------- 日志 / 临时 ----------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.tmp/
+.temp/
+
+# ---------- 环境变量 / 密钥 ----------
+.env
+.env.local
+.env.*.local
+
+# ---------- 系统辅助目录(本仓库元数据,不入库) ----------
+# 巡检与日志保留入仓,只过滤系统级 macOS 噪声
