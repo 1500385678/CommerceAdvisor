@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CommerceAdvisor · 商务知识库</title>
+  <style>
+    :root { --fg: #1a1a1a; --bg: #fafafa; --accent: #2c5f8d; --muted: #666; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, "Helvetica Neue", "PingFang SC", sans-serif;
+           color: var(--fg); background: var(--bg); line-height: 1.6; padding: 2rem; }
+    header { max-width: 960px; margin: 0 auto 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+    h1 { font-size: 1.8rem; color: var(--accent); }
+    .lede { color: var(--muted); margin-top: 0.5rem; }
+    main { max-width: 960px; margin: 0 auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    .card { display: block; padding: 1rem; background: #fff; border: 1px solid #e0e0e0;
+            border-radius: 6px; text-decoration: none; color: var(--fg); transition: border-color 0.2s; }
+    .card:hover { border-color: var(--accent); }
+    .card h2 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .card p { font-size: 0.85rem; color: var(--muted); }
+    .tag { display: inline-block; font-size: 0.7rem; color: var(--muted); margin-top: 0.5rem; }
+    footer { max-width: 960px; margin: 2rem auto 0; padding-top: 1rem; border-top: 1px solid #ddd;
+             font-size: 0.8rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CommerceAdvisor</h1>
+    <p class="lede">商务 / 贸易 / 零售 / 电商 · 10 大主题知识库</p>
+  </header>
+  <main>
+    <section class="grid">
+      <a class="card" href="01-origin.html">
+        <h2>01 · 商务起源与演变</h2>
+        <p>从物物交换到数字贸易的时间线</p>
+        <span class="tag">P1.2 · 待建</span>
+      </a>
+      <a class="card" href="02-branches.html">
+        <h2>02 · 商务分支与特点</h2>
+        <p>贸易、零售、电商等分类树</p>
+        <span class="tag">P1.3 · 待建</span>
+      </a>
+      <a class="card" href="03-logic.html">
+        <h2>03 · 商务逻辑与推理</h2>
+        <p>供需、博弈、决策的案例展示</p>
+        <span class="tag">P1.4 · 待建</span>
+      </a>
+      <a class="card" href="04-stories.html">
+        <h2>04 · 商务故事与传说</h2>
+        <p>商业传奇与企业家故事</p>
+        <span class="tag">P1.5 · 待建</span>
+      </a>
+      <a class="card" href="05-games.html">
+        <h2>05 · 商务趣味与游戏</h2>
+        <p>商业模拟与互动小工具</p>
+        <span class="tag">P1.6 · 待建</span>
+      </a>
+      <a class="card" href="06-masters.html">
+        <h2>06 · 商务大师与学者</h2>
+        <p>管理学家与商业思想家专题</p>
+        <span class="tag">P1.7 · 待建</span>
+      </a>
+      <a class="card" href="07-thinking.html">
+        <h2>07 · 商务思想与方法</h2>
+        <p>战略、运营、增长的思维导图</p>
+        <span class="tag">P1.8 · 待建</span>
+      </a>
+      <a class="card" href="08-modeling.html">
+        <h2>08 · 商务应用与建模</h2>
+        <p>商业模式画布、SWOT 等工具库</p>
+        <span class="tag">P1.9 · 待建</span>
+      </a>
+      <a class="card" href="09-aesthetics.html">
+        <h2>09 · 商务之美</h2>
+        <p>品牌、设计、用户体验美学集锦</p>
+        <span class="tag">P1.10 · 待建</span>
+      </a>
+      <a class="card" href="10-curiosities.html">
+        <h2>10 · 商务趣闻与奇观</h2>
+        <p>数据可视化与商业奇闻</p>
+        <span class="tag">P1.11 · 待建</span>
+      </a>
+    </section>
+  </main>
+  <footer>
+    静态站点 · 零依赖 · python3 -m http.server 8000 即可预览
+  </footer>
+</body>
+</html>
