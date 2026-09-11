@@ -28,7 +28,17 @@ build/
 .parcel-cache/
 
 # ---------- 日志 / 临时 ----------
-*.log
+# 2026-09-12 修 BUG(连续 9 日巡检报告入库需 `git add -f` 强加):
+# 根因:macOS case-insensitive 文件系统 + git core.ignoreCase=true 下,
+# `*.log` 模式被 git 内部 case-fold 处理,误把 `.Log/` 目录下"任何文件名"
+# (包括 .md / .txt / .DS_Store)都判定为命中,导致 `git add .Log/巡检-商务-*.md`
+# 报 "path ignored",只能 `git add -f` 强加,绕路 9 日。
+#
+# 修法:删除通用的 `*.log` 通配规则,改用具体工具日志名精确匹配;
+#      `.Log/` 目录是用户主动管理的归档目录,不再被 `*.log` 误伤,
+#      其下的 .DS_Store 等 macOS 噪声仍由顶部 `.DS_Store` 规则忽略。
+# 副作用(可接受):用户主动创建的 `test.log` / `debug.log` 等不会被 .gitignore 忽略,
+#                 但这种"用户日志"本就该由用户决定是否提交,不归 .gitignore 管。
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
