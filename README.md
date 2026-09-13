@@ -105,3 +105,14 @@ npx serve .
 | 2026-08-27 | 落槌 P0.3 技术栈:纯静态 HTML/CSS/JS,4 条选型理由入表 | T4 cron 推进 P0.3 |
 | 2026-08-28 | 落盘 P1.1 `index.html`(Phase 1 破零) | T4 cron 推进 P1.1 |
 | 2026-08-29 | P0.4 收尾:checkbox [x] + 纯静态「无构建」定调(README 二章加构建配置行) | T1 cron 收尾 |
+| 2026-09-01 | 落盘 P0.6 `lib-index.md`(10 子库总览 + 引用边界 + Phase 1 映射) | T4 cron 推进 P0.6 |
+| 2026-09-02 | 落盘 P1.2 `01-origin.html`(空壳 iframe 版,引用 _CommerceLib/01) | T4 cron 推进 P1.2 |
+| 2026-09-03 | 落盘 P1.3 `02-branches.html`(沿用 01 模板,引用 _CommerceLib/02) | T4 cron 推进 P1.3 |
+| 2026-09-04 | 落盘 P1.4 `03-logic.html`(沿用 02 模板,引用 _CommerceLib/03) | T4 cron 推进 P1.4 |
+| 2026-09-05 | 落盘 P1.5 `04-stories.html`(沿用 03 模板,引用 _CommerceLib/04) | T4 cron 推进 P1.5 |
+| 2026-09-06 | 落盘 P1.6 `05-games.html`(空壳 + 囚徒困境演示,引用 _CommerceLib/05) | T4 cron 推进 P1.6 |
+| 2026-09-07 | 落盘 P1.7 `06-masters.html`(空壳 + 5 章速览,引用 _CommerceLib/06;9/7 落盘漏 commit,9/8 巡检代收尾) | T4 cron 推进 P1.7 |
+| 2026-09-08 | 落盘 P1.8 `07-thinking.html`(沿用 06 模板,引用 _CommerceLib/07) | T4 cron 推进 P1.8 |
+| 2026-09-09 | 落盘 P1.9 `08-modeling.html`(沿用 07 模板,引用 _CommerceLib/08) | T4 cron 推进 P1.9 |
+| 2026-09-10 | 落盘 P1.10 `09-aesthetics.html`(沿用 08 模板,引用 _CommerceLib/09) | T4 cron 推进 P1.10 |
+| 2026-09-11 | 落盘 P1.11 `10-curiosities.html`(沿用 09 模板,引用 _CommerceLib/10) · Phase 1 100% 收官(11/11) | T4 cron 推进 P1.11 |
