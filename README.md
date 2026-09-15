@@ -116,3 +116,5 @@ npx serve .
 | 2026-09-09 | 落盘 P1.9 `08-modeling.html`(沿用 07 模板,引用 _CommerceLib/08) | T4 cron 推进 P1.9 |
 | 2026-09-10 | 落盘 P1.10 `09-aesthetics.html`(沿用 08 模板,引用 _CommerceLib/09) | T4 cron 推进 P1.10 |
 | 2026-09-11 | 落盘 P1.11 `10-curiosities.html`(沿用 09 模板,引用 _CommerceLib/10) · Phase 1 100% 收官(11/11) | T4 cron 推进 P1.11 |
+| 2026-09-12 | `.gitignore:31` BUG 修复(删 `*.log` 通配规则,确保 `.Log/` 巡检报告可正常 `git add` 入仓无需 `add -f` 绕路) | T1 cron 暗修,9/16 T4 回溯补登变更行 |
+| 2026-09-16 | 补 `.plan/20260916.md` 打破 9/12 ~ 9/16 连续 5 日 `.plan/` 静默断点 | T4 cron 推进 P0 巡检积压 |
