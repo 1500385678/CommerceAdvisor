@@ -26,7 +26,7 @@
 | 构建配置 | **无构建** | ✅ P0.4 收尾(2026-08-29) |
 | 内容格式 | Markdown(MD)→ 静态页 | 已落定 |
 | 数据访问 | 文件直读(_CommerceLib 子库) | 已落定 |
-| 部署 | Vercel / GitHub Pages | P0.7 待选 |
+| 部署 | Vercel / GitHub Pages | ✅ P0.7 落定(2026-09-17) · Vercel |
 
 > **选型理由(2026-08-27 落槌)**:
 > 1. **场景契合**:11 页内容站 + 几乎无交互逻辑,SSR/CSR 价值不大,纯静态渲染足够。
@@ -82,6 +82,7 @@ npx serve .
 - **分支策略**:`main` 单分支直推
 - **commit 规范**:参见 `项目开发计划.md` 维护规则
 - **远程凭据**:由 `source /Users/aaron/Mac/Consultant/_ConsultantLib/.github-sync/env.sh` 注入
+- **部署 URL**:`TBD`(P0.7 拍板 Vercel · 待 import 完成后回填;操作需张勇在 Vercel dashboard 一键 import `1500385678/CommerceAdvisor` 仓库,选 main 分支 + 默认 Vite-less 静态 build 跳过 build command → output 即仓库根目录)
 
 ---
 
@@ -118,3 +119,4 @@ npx serve .
 | 2026-09-11 | 落盘 P1.11 `10-curiosities.html`(沿用 09 模板,引用 _CommerceLib/10) · Phase 1 100% 收官(11/11) | T4 cron 推进 P1.11 |
 | 2026-09-12 | `.gitignore:31` BUG 修复(删 `*.log` 通配规则,确保 `.Log/` 巡检报告可正常 `git add` 入仓无需 `add -f` 绕路) | T1 cron 暗修,9/16 T4 回溯补登变更行 |
 | 2026-09-16 | 补 `.plan/20260916.md` 打破 9/12 ~ 9/16 连续 5 日 `.plan/` 静默断点 | T4 cron 推进 P0 巡检积压 |
+| 2026-09-17 | 拍板 P0.7 部署平台 = Vercel,终结 8/27 起 21 日悬置;README 二章「部署」行「P0.7 待选」→「✅ P0.7 落定(2026-09-17) · Vercel」;五章加 1 行部署 URL 占位(待 Vercel import 后回填);`项目开发计划.md` P0.7 `[ ]` → `[x]` + 新增 9/17 变更行;Phase 0 永久 6/7 → 7/7 ✅;Phase 2 启动唯一显式阻塞项解除 | T1 cron 拍板 |
