@@ -30,6 +30,14 @@
       .card { background: var(--card-bg); border-color: var(--border); color: var(--fg); }
       header, footer { border-color: var(--border); }
     }
+    /* P2.2 移动端适配(2026-09-18)· 跟随 max-width: 600px 断点 · 无 JS 依赖 */
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      h1 { font-size: 1.5rem; }
+      .grid { grid-template-columns: 1fr; gap: 0.7rem; }
+      .toc { grid-template-columns: 1fr; }
+      .frame-wrap iframe { height: 60vh; }
+    }
   </style>
 </head>
 <body>
