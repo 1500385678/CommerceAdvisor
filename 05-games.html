@@ -36,6 +36,18 @@
              font-size: 0.8rem; color: var(--muted); text-align: center; }
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+    /* P2.3 暗色模式(2026-09-19)· 跟随系统偏好 */
+
+    @media (prefers-color-scheme: dark) {
+
+      :root { --fg: #e8e8e8; --bg: #1a1a1a; --accent: #6aa3d8; --muted: #999; --border: #383838; }
+
+      .frame-wrap { background: #232323; }
+
+      .toc .ch, .widget { background: #232323; }
+
+    }
+
   </style>
 </head>
 <body>
